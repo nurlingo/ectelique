@@ -8,7 +8,7 @@ $(document).ready(function () {
         var message = $(formNm).find(".form-message");
         var formTitle = $(formNm).find(".form-title");
 
-        var token = "472797736:AAEo43CDOqcVRnHgEmTa-ocORzFoZxNcWgs";
+        var token = "309839318:AAEkELQeIhTNnAJHn_gX1gzxB-J_w2rPC4Q";
         var chat_id = "-275778983";
 
         var test = $('#name').val();
