@@ -18,6 +18,8 @@
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="css/font-icon.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/telegramform.js"></script>
 </head>
 <body>
 <!-- header top section -->
@@ -38,17 +40,29 @@
 <section id="hero" class="section ">
   <div class="container">
     <div class="row">
-      <div class="col-md-7 col-sm-6 hero">
-        <div class="hero-content">
-          <h1>Mordern, Minimal & Inspiring.</h1>
-        </div>
-        <!-- hero --> 
+      <div class="col-md-2 col-sm-2 hero">
       </div>
-      <div class="col-md-5 col-sm-6 hero">
+      <div class="col-md-8 col-sm-8 hero">
         <div class="hero-content">
-          <p>For creaters by creaters.</p>
+
+          <form id="form-contact" method="POST" class="form-element" autocomplete="off" action="post_form.php">
+            <div class="form-group">
+              <label for="exampleInputEmail">Name</label>
+              <input name="name" type="form-text" class="form-control" id="exampleInputEmail" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPhoneNumber">Phone number</label>
+              <input name="phone" type="fomr-text" class="form-control" id="exampleInputPhoneNumber" placeholder="Phone number">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPhoneNumber">Phone number</label>
+              <textarea name="theme" class="form-control" id="exampleFormControlTextarea" rows="3" placeholder="Message"></textarea>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your contacts with anyone else.</small>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+
         </div>
-        <!-- hero --> 
       </div>
     </div>
   </div>
